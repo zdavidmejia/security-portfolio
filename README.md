@@ -3,9 +3,9 @@
 Documented cloud security investigations, built in a live Azure tenant
 (Mad Hat Labs, a multi-user training environment).
 
-Target role: SOC Analyst / Security Analyst
-Currently: English Teacher | Valledupar / Remote
-Contact: zdavidmejia@gmail.com · www.linkedin.com/in/david-mejia-001b77308
+Target role: SOC Analyst / Security Analyst  
+Currently: English Teacher | Valledupar / Remote  
+Contact: zdavidmejia@gmail.com · https://linkedin.com/in/david-mejia-florez
 
 ## Investigations
 | # | Title | Focus | Write-up |
