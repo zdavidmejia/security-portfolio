@@ -31,7 +31,7 @@ During this review, I identified a single resource group whose naming structure 
 
 **Figure 1.** Resource group inventory review identifying a naming-convention outlier. 
 
-images/stage-one.jpg
+![Figure 1](https://github.com/zdavidmejia/security-portfolio/blob/main/images/stage-one.jpeg)
 
 ---
 
@@ -47,7 +47,7 @@ I reviewed the resource metadata and tags to establish ownership and deployment 
 
 **Figure 2.** Resource metadata and tag review providing ownership and deployment-context information. 
 
-images/stage-two.png
+![Figure 2](https://github.com/zdavidmejia/security-portfolio/blob/main/images/stage-two.png)
 
 ---
 
@@ -63,7 +63,7 @@ The deployment history contained a successful deployment associated with the res
 
 **Figure 3.** Review of deployment history showing the successful ARM deployment associated with the resource. 
 
-images/stage-three.png
+![Figure 3](https://github.com/zdavidmejia/security-portfolio/blob/main/images/stage-three.png)
 
 ---
 
@@ -81,7 +81,7 @@ Further examination of the policy parameters revealed that the policy effect was
 
 **Figure 4.** Policy assignment parameters showing the naming-convention policy operating in Audit mode. 
 
-images/stage-four.png
+![Figure 4](https://github.com/zdavidmejia/security-portfolio/blob/main/images/stage-four.png)
 
 ---
 
