@@ -33,7 +33,7 @@ Further review determined that the compromised user retained ownership of the le
 
 **Conclusion:** The attack succeeded by abusing a trusted authenticated session and leveraging existing application ownership rights rather than defeating authentication controls.
 
-images/1-entry.png
+![Figure 1](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab2/1.%20entry.png)
 
 *Figure 1. Branding & Properties review showing investigator notes associated with the initial compromise.*
 
@@ -51,7 +51,7 @@ This transitioned the attacker from a user-based compromise to a workload identi
 
 **Conclusion:** The attacker escalated from a compromised user session to persistent application-based authentication.
 
-images/2-escalate.png
+![Figure 2](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab2/2.%20escalate.png)
 
 *Figure 2. Client secret configuration showing a credential with an excessive lifetime.*
 
@@ -69,11 +69,11 @@ A review of the legacy application's API permissions revealed that Microsoft Gra
 
 **Conclusion:** The attacker established persistence through application ownership, enabling future credential creation and recovery of access.
 
-images/3-owners.png
+![Figure 3](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab2/3.1.%20pivot.png)
 
 *Figure 3. Owners blade showing a secondary application added to the legacy application's ownership list.*
 
-images/3-api-permissions.png
+![Figure 4](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab2/3.2%20pivot.png)
 
 *Figure 4. Microsoft Graph application permissions granted through administrative consent.*
 
@@ -91,7 +91,7 @@ By combining the custom scope with the attacker's rogue application, a future co
 
 **Conclusion:** The attacker established OAuth-based persistence capable of surviving credential rotation.
 
-images/4-persistence.png
+![figure 5](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab2/4.%20persisitance.png)
 
 *Figure 5. Expose an API configuration showing a custom OAuth scope used for delegated access.*
 
@@ -111,11 +111,11 @@ Unlike traditional credential theft, this approach relies on delegated authoriza
 
 **Conclusion:** The attacker completed the OAuth consent-phishing kill chain and established a mechanism capable of harvesting delegated access tokens from tenant users.
 
-images/5-authentication.png
+![Figure 6](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab2/5.2%20loot.png)
 
 *Figure 6. Authentication configuration showing redirect URI locations capable of receiving authorization codes.*
 
-images/5-consent-screen.png
+![Figure 7](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab2/5.1.%20loot.png)
 
 *Figure 7. User consent prompt presented to victims during the phishing workflow.*
 
