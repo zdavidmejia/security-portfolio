@@ -36,7 +36,7 @@ Although the export successfully exposed active role assignments, it also reveal
 
 The IAM export served as the baseline dataset for the remainder of the audit and revealed the first signs of privilege sprawl.
 
-images/finding1.png
+![Figure 1](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab3/stage_one.png)
 
 *Figure 1. Subscription-level role-assignment export used to identify repeated high-privilege assignments.*
 
@@ -52,7 +52,7 @@ This demonstrated an important governance issue. Azure tracks role assignments t
 
 The primary advantage of the CLI was repeatability and automation. The same review can be scheduled, scripted, and reused without manual portal navigation.
 
-images/finding2.png
+![Figure 2](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab3/stage_two.png)
 
 *Figure 2. Azure CLI output highlighting an orphaned role assignment through missing identity information.*
 
@@ -66,7 +66,7 @@ Using Azure Resource Graph and Kusto Query Language (KQL), authorization resourc
 
 Resource Graph proved significantly more scalable than portal or CLI reviews when searching for assignment patterns. However, it only exposed active role assignments and did not surface eligible assignments managed through Privileged Identity Management.
 
-images/finding3.png
+![Figure 3](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab3/stage_three.png)
 
 *Figure 3. Azure Resource Graph query used to search role-assignment data across the tenant.*
 
@@ -82,7 +82,7 @@ The review demonstrated an important governance distinction: users may possess s
 
 PIM provided the strongest view of privilege lifecycle, but only for assignments managed through the PIM framework.
 
-images/finding4.png
+![Figure 4](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab3/stage_four.png)
 
 *Figure 4. PIM export demonstrating the distinction between Active and Eligible role assignments.*
 
@@ -98,29 +98,29 @@ A role-assignment export from the hidden scope confirmed the existence of an add
 
 The most important lesson from the Hunt was that no individual tool revealed the entire problem. Only by correlating IAM exports, CLI findings, Resource Graph results, PIM eligibility, and direct scope investigation could the full access picture be understood.
 
-images/finding5a.png
+![Figure 5.1](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab3/stage_fiveA.png)
 
-*Figure 5. PIM activation process used to elevate eligible access during the audit.*
+*Figure 5. Privileged Identity Management (PIM) resource overview used to identify available eligible assignments and begin the privilege hunt.*
 
-images/finding5b.png
+![Figure 5.2](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab3/stage_fiveB.png)
 
-*Figure 6. Hidden resource-group investigation used to validate excessive privilege assignments.*
+*Figure 6. Eligible role assignments identified through Privileged Identity Management prior to activation. The assignment provided temporary access required to continue the RBAC investigation.*
 
-images/finding5c.png
+![Figure 5.3](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab3/stage_fiveC.png)
 
-*Figure 7. Additional evidence collected during the privilege hunt.*
+*Figure 7. Newly discovered PIM-managed resource group identified after privilege activation, revealing an additional scope requiring RBAC review.*
 
-images/finding5d.png
+![Figure 5.4](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab3/stage_fiveD.png)
 
-*Figure 8. RBAC review of newly exposed audit scope.*
+*Figure 8. Activated PIM assignments showing temporary elevation across both audited resource groups. The active assignments included automatic expiration timestamps and could be manually deactivated at any time.*
 
-images/finding5e.png
+![Figure 5.5](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab3/stage_fiveE.png)
 
-*Figure 9. Validation of assignment patterns identified earlier in the audit.*
+*Figure 9. Access Control (IAM) review of the newly discovered resource group prior to exporting role assignments for detailed RBAC analysis.*
 
-images/finding5f.png
+![Figure 5.6](https://github.com/zdavidmejia/security-portfolio/blob/main/images/lab3/stage_fiveF.png)
 
-*Figure 10. Final evidence gathered from the hidden resource-group review.*
+*Figure 10. Initial RBAC review of the hidden resource group. The role-assignment export was selected to obtain a complete view of permissions for further investigation.*
 
 ---
 
