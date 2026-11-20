@@ -41,11 +41,11 @@ The Location field on each Function App Overview page was reviewed and compared 
 
 ### Evidence
 
-![Intern Deployment Region](images/findings_one_3.png)
+![Intern Deployment Region](images/lab4/findings_one.png)
 
 *Figure 1: Intern deployment located in Australia East.*
 
-![Production Baseline Region](images/findings_one_b.png)
+![Production Baseline Region](images/lab4/findings_one_b.png)
 
 *Figure 2: Production Function App located in Central US.*
 
@@ -75,11 +75,11 @@ The Identity blade showed that the System Assigned identity was disabled and no 
 
 ### Evidence
 
-![Identity Blade](images/findings_two.png)
+![Identity Blade](images/lab4/findings_two.png)
 
 *Figure 3: No user-assigned managed identity configured.*
 
-![Identity Configuration](images/findings_two_b.png)
+![Identity Configuration](images/lab4/findings_two_b.png)
 
 *Figure 4: System-assigned identity disabled.*
 
@@ -109,11 +109,11 @@ A blob URL was copied from the container and opened in a private browser session
 
 ### Evidence
 
-![Anonymous Access Enabled](images/findings_three.png)
+![Anonymous Access Enabled](images/lab4/findings_three.png)
 
 *Figure 5: Container configured with anonymous access.*
 
-![Unauthenticated Access Verification](images/findings_three_b.png)
+![Unauthenticated Access Verification](images/lab4/findings_three_b.png)
 
 *Figure 6: Blob successfully accessed while unauthenticated.*
 
@@ -143,7 +143,7 @@ The access restriction configuration showed public access enabled, traffic from 
 
 ### Evidence
 
-![Access Restrictions](images/findings_four.png)
+![Access Restrictions](images/lab4/findings_four.png)
 
 *Figure 7: Public access enabled with no meaningful restrictions.*
 
@@ -174,7 +174,7 @@ Four findings were identified:
 
 ### Evidence Supporting Priority
 
-![Container Overview](images/findings_five.png)
+![Container Overview](images/lab4/findings_five.png)
 
 *Figure 8: Publicly accessible container identified during review.*
 
