@@ -13,7 +13,7 @@ Contact: zdavidmejia@gmail.com · https://linkedin.com/in/david-mejia-florez
 | 1 | Operation Dead Deploy | Governance forensics, deployment audit trail | [Dead Deploy](dead_deploy.md) |
 | 2 | The Stolen Identity | App registration attack kill chain (Entra ID) | [The Stolen Identity](the_stolen_identity.md) |
 | 3 | Privilege Audit | RBAC and least privilege | [The Privilege Audit](the_privilege_audit.md) |
-| 4 | Spin Up and Lock Down | Compute attack surface | coming, week 4 |
+| 4 | Spin Up and Lock Down | Compute attack surface | [The Friday Deploy](the_friday_deploy.md) |
 | 5 | Network the Operative | Network segmentation | coming, week 5 |
 | 6 | Bucket Looting | Storage exposure hunting | coming, week 6 |
 | 7 | Find the Anomaly | Log analysis and KQL | coming, week 7 |
