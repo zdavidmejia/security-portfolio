@@ -223,7 +223,9 @@ Unlike the remaining findings, this issue was verified as an active exposure. Da
 
 This review demonstrated the value of comparing new deployments against a known-good production baseline.
 
-The exercise also reinforced the importance of ion.
+The exercise also reinforced the importance of validating risk through direct testing and prioritizing active exposure above theoretical concerns.
+
+The most important outcome was not finding the issues themselves, but determining which issue required immediate remediation.
 
 ---
 
